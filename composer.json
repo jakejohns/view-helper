@@ -1,0 +1,21 @@
+{
+    "name": "jnjxp/view-helper",
+    "type": "library",
+    "description": "view helpers",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "jake johns",
+            "email": "jake@jakejohns.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "jnjxp/html": "0.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jnjxp\\ViewHelper\\": "src/"
+        }
+    }
+}
