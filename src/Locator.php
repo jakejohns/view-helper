@@ -103,18 +103,20 @@ class Locator
     }
 
     /**
-     * Calls helper with args if args present
+     * __invoke
      *
-     * @param array $args arguments
+     * Summaries for methods should use 3rd person declarative rather
+     * than 2nd person imperative, beginning with a verb phrase.
      *
      * @return mixed
      *
      * @access public
      */
-    public function __invoke($args)
+    public function __invoke()
     {
+        $args = func_get_args();
         if (count($args)) {
-            $this->__call(array_shift($args), $args);
+            return $this->__call(array_shift($args), $args);
         }
         return $this;
     }
