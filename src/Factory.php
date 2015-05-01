@@ -49,7 +49,8 @@ class Factory
      * @access protected
      */
     protected $helpers = array(
-        'html' => '\Jnjxp\Html\Factory'
+        'html'   => '\Jnjxp\Html\Factory',
+        'format' => '\Jnjxp\HtmlFormat\Factory'
     );
 
     /**
